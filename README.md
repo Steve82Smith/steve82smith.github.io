@@ -151,5 +151,22 @@ And then grant the role to the user
 
 ## Useful Links
 
-Установка и настройка Zabbix 5.0 <https://serveradmin.ru/ustanovka-i-nastrojka-zabbix-5-0>  
+Установка и настройка Zabbix 5.0 <https://serveradmin.ru/ustanovka-i-nastrojka-zabbix-5-0>
+
 Install the Microsoft ODBC driver for SQL Server (Linux) <https://docs.microsoft.com/ru-ru/sql/connect/odbc/linux-mac/installing-the-microsoft-odbc-driver-for-sql-server?view=sql-server-ver15#ubuntu17>
+
+Configure Reverse Proxies Using Apache2 HTTP Server On Ubuntu 18.04 <https://websiteforstudents.com/configure-reverse-proxies-using-apache2-http-server-on-ubuntu-18-04/>
+
+Настройка Reverse Proxy Apache (Debian 8) с автоматической выдачей Let's Encrypt <https://habr.com/ru/post/330670/>
+
+Как преобразовать физический сервер Linux в виртуальную машину VMware <https://wiki.merionet.ru/servernye-resheniya/54/kak-preobrazovat-fizicheskij-server-linux-v-virtualnuyu-mashinu-vmware/>
+
+Восстановление загрузчика Grub 2 в Linux Ubuntu <http://tmel.ru/vosstanovlenie-zagruzchika-grub-2-v-linux-ubuntu/>
+
+Converting Linux server OpenSUSE 13.2 with kernel 3.16.7-29-desktop error: installGrub.sh failed with return code: 127, and message: FATAL: kernel too old <https://communities.vmware.com/message/2844710#2844710>
+
+Настройка сервера Radius в Windows Server 2016 <https://vmblog.ru/nastrojka-servera-radius-v-windows-server/>
+
+Настройка PPTP Сервера на MikroTik <https://mikrotiklab.ru/nastrojka/artga-pptp-servera.html>
+
+Mikrotik (vpn server) + Windows server 2008r2 (ad, radius server) <https://habr.com/en/sandbox/58551/>
