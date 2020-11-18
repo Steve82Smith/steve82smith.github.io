@@ -70,6 +70,15 @@ The setting takes effect without a server restart. To see the state of "Agent XP
     GO
     EXEC sp_configure 'Agent XPs'
 
+#### How to query all databases sizes?
+
+    select t1.name, t2.name, t2.physical_name,ROUND(t2.size/131072.0,3),t2.state_desc,t3.name, t3.physical_name,ROUND(t3.size/131072.0,3),t3.state_desc
+    from 
+    master.dbo.sysdatabases as t1 left join 
+    (select database_id, name, physical_name, size, state_desc from sys.master_files where type_desc='ROWS') as t2 on t1.dbid=t2.database_id
+    left join
+    (select database_id, name, physical_name, size, state_desc from sys.master_files where type_desc='LOG') as t3 on t2.database_id=t3.database_id
+
 
 ## Exchange Tips
 
@@ -170,3 +179,23 @@ Converting Linux server OpenSUSE 13.2 with kernel 3.16.7-29-desktop error: insta
 Настройка PPTP Сервера на MikroTik <https://mikrotiklab.ru/nastrojka/artga-pptp-servera.html>
 
 Mikrotik (vpn server) + Windows server 2008r2 (ad, radius server) <https://habr.com/en/sandbox/58551/>
+
+Access Control List - списки контроля доступа <https://help.ubuntu.ru/wiki/access_control_list>
+
+How to Create MySQL Users Accounts and Grant Privileges <https://linuxize.com/post/how-to-create-mysql-user-accounts-and-grant-privileges/>
+
+How to reset the MySQL root password <https://www.a2hosting.com/kb/developer-corner/mysql/reset-mysql-root-password>
+
+Remote Desktop Services - Используем перенаправление профилей пользователей и перемещаемые папки <https://blog.it-kb.ru/2011/12/23/remote-desktop-services-rds-roaming-user-profiles-and-folder-redirection-gpo-settings/>
+
+Windows Server 2012 R2 Remote Desktop Services - Настраиваем пользовательский интерфейс на серверах RD Session Host <https://blog.it-kb.ru/2014/09/02/windows-server-2012-r2-remote-desktop-services-hide-folders-music-video-in-my-computer-name-space-and-copy-and-lock-start-screen-settings-for-all-users-on-rd-session-host/>
+
+Remote Desktop Services - Настраиваем пользовательский интерфейс на серверах RD Session Host <https://blog.it-kb.ru/2013/09/10/remote-desktop-rd-session-host-user-interface-settings-for-windows-explorer-profile-folders-control-panel-taskbar-modern-ui-start-screen-in-group-policy-preferences/#p11>
+
+SQL Server Database Stuck in Restoring State <https://www.mssqltips.com/sqlservertip/5460/sql-server-database-stuck-in-restoring-state/>
+
+ALTER DATABASE failed because a lock could not be placed on database ‘dbname’. Try again later. <https://sqlzealots.com/2018/07/20/alter-database-failed-because-a-lock-could-not-be-placed-on-database-dbname-try-again-later/>
+
+Live monitoring queries to troubleshoot issues in sql server <https://sqlzealots.com/2015/02/24/live-monitoring-queries-to-troubleshoot-issues-in-sql-server/>
+
+How to delete remote branches in Git <https://www.educative.io/edpresso/how-to-delete-remote-branches-in-git>
