@@ -9,17 +9,17 @@ categories: tips
 
 ### 504 5.7.4 Unrecognized authentication type
 
-Starting in Exchange 2010, the only authentication mechanism enabled is NTLM.
-2 solutions:
-a) tell your app to use the NTLM authentication scheme.
-b) Enable AuthLogin authenticaton on Exchange:
-In the Exchange console under server configuration:
-Select hub transport.
-Right click the client server and select properties.
-Select the authentication tab.
-Check the Basic Authentication checkbox.
-Uncheck the Offer Basic only after TLS
-May have to restart the Exchange services.
+Starting in Exchange 2010, the only authentication mechanism enabled is NTLM.  
+2 solutions:  
+a) tell your app to use the NTLM authentication scheme.  
+b) Enable AuthLogin authenticaton on Exchange:  
+In the Exchange console under server configuration:  
+Select hub transport.  
+Right click the client server and select properties.  
+Select the authentication tab.  
+Check the Basic Authentication checkbox.  
+Uncheck the Offer Basic only after TLS  
+May have to restart the Exchange services.  
 
 ### 550 5.7.1 Client does not have permission to send as this sender
 
