@@ -1,13 +1,13 @@
 ---
 layout: post
 title:  "Exchange Tips"
-date:   2020-07-31 00:00:00 +0300
+date:   2020-11-20 00:00:00 +0300
 categories: tips
 ---
 
-# Smtp Errors
+## Smtp Errors
 
-## 504 5.7.4 Unrecognized authentication type
+### 504 5.7.4 Unrecognized authentication type
 
 Starting in Exchange 2010, the only authentication mechanism enabled is NTLM.
 2 solutions:
@@ -21,7 +21,7 @@ Check the Basic Authentication checkbox.
 Uncheck the Offer Basic only after TLS
 May have to restart the Exchange services.
 
-## 550 5.7.1 Client does not have permission to send as this sender
+### 550 5.7.1 Client does not have permission to send as this sender
 
 This error happens because the FROM address, the customer was using, was different than the Exchange mailbox they were relaying through.
 Like the error message implies, this is a permissions issue. Go to:
